@@ -7,8 +7,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
     <link rel="stylesheet" href="Assets/CSS/main.css">
 </head>
-<body>
-    <header class="w-full py-4 grid-container bg-white text-indigo-500 border-b border-black/10 relative">
+<body class="font-Roboto">
+    <header class="w-full py-4 grid-container bg-white text-indigo-500 border-b border-black/10 relative gap-y-6 z-[3]">
         <div class="flex items-center gap-6 justify-between text-sm md:text-base xl:text-lg">
             <a href="index.html" class="text-lg md:text-xl xl:text-2xl">Brand</a>
             <div id="menu" class="flex items-center gap-4 max-md:absolute max-md:w-full max-md:left-0 max-md:bg-white max-md:py-6 max-md:flex-col max-md:top-0 max-md:-translate-y-full transition-all duration-500 z-[4]">
@@ -33,10 +33,36 @@
                 <img src="Assets/Images/header/menu.svg" alt="Иконка меню">
             </button>
         </div>
-
+        <div class="w-full h-px bg-black/10 max-md:hidden"></div>
+        <nav class="flex items-center gap-6 w-full">
+            <button class="nav-prev shrink-0 bg-indigo-500 rounded-lg flex items-center justify-center w-8 h-8 lg:w-9 lg:h-9 xl:w-10 xl:h-10">
+                <img src="Assets/Images/header/right.svg" alt="" class="scale-[-1]">
+            </button>
+            <div class="swiper nav-slider text-xs md:text-sm xl:text-base text-[#6A6A6A] grow">
+                <div class="swiper-wrapper">
+                    <a href="#" class="swiper-slide nav-active px-4 py-1 rounded-lg border border-[#6A6A6A] text-center">BDSM</a>
+                    <a href="#" class="swiper-slide px-4 py-1 rounded-lg border border-[#6A6A6A] text-center">Элитная</a>
+                    <a href="#" class="swiper-slide px-4 py-1 rounded-lg border border-[#6A6A6A] text-center">Пирсинг</a>
+                    <a href="#" class="swiper-slide px-4 py-1 rounded-lg border border-[#6A6A6A] text-center">Видео</a>
+                    <a href="#" class="swiper-slide px-4 py-1 rounded-lg border border-[#6A6A6A] text-center">МЖМ</a>
+                    <a href="#" class="swiper-slide px-4 py-1 rounded-lg border border-[#6A6A6A] text-center">Поцелуи</a>
+                    <a href="#" class="swiper-slide px-4 py-1 rounded-lg border border-[#6A6A6A] text-center">GFE</a>
+                    <a href="#" class="swiper-slide px-4 py-1 rounded-lg border border-[#6A6A6A] text-center">BDSM</a>
+                    <a href="#" class="swiper-slide px-4 py-1 rounded-lg border border-[#6A6A6A] text-center">Элитная</a>
+                    <a href="#" class="swiper-slide px-4 py-1 rounded-lg border border-[#6A6A6A] text-center">Пирсинг</a>
+                    <a href="#" class="swiper-slide px-4 py-1 rounded-lg border border-[#6A6A6A] text-center">Видео</a>
+                    <a href="#" class="swiper-slide px-4 py-1 rounded-lg border border-[#6A6A6A] text-center">МЖМ</a>
+                    <a href="#" class="swiper-slide px-4 py-1 rounded-lg border border-[#6A6A6A] text-center">Поцелуи</a>
+                    <a href="#" class="swiper-slide px-4 py-1 rounded-lg border border-[#6A6A6A] text-center">GFE</a>
+                </div>
+            </div>            
+            <button class="nav-next shrink-0 bg-indigo-500 rounded-lg flex items-center justify-center w-8 h-8 lg:w-9 lg:h-9 xl:w-10 xl:h-10">
+                <img src="Assets/Images/header/right.svg" alt="">
+            </button>
+        </nav>
     </header>
 
-    <div id="overlay" class="bg-black/30 inset-0 fixed top-[74px] z-[3] hidden"></div>
+    <div id="overlay" class="bg-black/30 inset-0 fixed z-[2] hidden"></div>
 
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/ui/1.13.3/jquery-ui.min.js" integrity="sha256-sw0iNNXmOJbQhYFuC9OF2kOlD5KQKe1y5lfBn4C9Sjg=" crossorigin="anonymous"></script>
