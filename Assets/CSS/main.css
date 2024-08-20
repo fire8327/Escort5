@@ -2916,6 +2916,10 @@ body{
     font-size: 0.75rem;
     line-height: 1rem;
   }
+
+  .md\:text-\[10px\]{
+    font-size: 10px;
+  }
 }
 
 @media (min-width: 1024px){
@@ -2968,6 +2972,11 @@ body{
   .xl\:text-xl{
     font-size: 1.25rem;
     line-height: 1.75rem;
+  }
+
+  .xl\:text-xs{
+    font-size: 0.75rem;
+    line-height: 1rem;
   }
 }
 
