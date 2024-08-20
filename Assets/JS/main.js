@@ -31,3 +31,17 @@ const swiper = new Swiper('.nav-slider', {
         }
     }
 });
+/* card-slider */
+const swiper2 = new Swiper('.card-slider', {
+    loop: true,
+    spaceBetween: 10,
+    slidesPerView: 1
+});
+
+
+/* likeButton */
+$(".likeButton").each((i, el) => {
+    $(el).click(() => {
+        $(el).find("svg").toggleClass("fill-white fill-[#EE5253]")
+    })
+})

@@ -5,7 +5,7 @@
 @tailwind utilities;
 
 body{
-    @apply flex flex-col min-h-screen text-[#282828] 
+    @apply flex flex-col min-h-screen text-[#282828] bg-[#F6F6F6]
 }
     
 :root{
@@ -41,5 +41,9 @@ body{
 }
 
 .nav-active {
-    @apply bg-indigo-500 border-indigo-500 text-white
+    @apply bg-violet-500 border-violet-500 text-white
+}
+
+.like-shadow {
+    box-shadow: 0px 0px 8px 0px #28282880;
 }
