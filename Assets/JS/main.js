@@ -45,3 +45,11 @@ $(".likeButton").each((i, el) => {
         $(el).find("svg").toggleClass("fill-white fill-[#EE5253]")
     })
 })
+
+
+/* filters */
+$(".filtersList").each((i, el) => {
+    $(el).find(".toggler").click(() => {
+        $(el).find(".list").slideToggle()
+    })
+})
