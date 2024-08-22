@@ -48,6 +48,29 @@ const swiper2 = new Swiper('.card-slider', {
     spaceBetween: 10,
     slidesPerView: 1
 });
+/* card-page-slider */
+const swiper3 = new Swiper('.girlPage-slider2', {
+    loop: true,
+    spaceBetween: 10,
+    breakpoints: {
+        320: {
+            slidesPerView: 3
+        },
+        768: {
+            slidesPerView: 4
+        }
+    },
+    freeMode: true,
+    watchSlidesProgress: true
+});
+const swiper4 = new Swiper('.girlPage-slider', {
+    loop: true,
+    spaceBetween: 10,
+    slidesPerView: 1,
+    thumbs: {
+        swiper: swiper3,
+    }
+});
 
 
 /* likeButton */
