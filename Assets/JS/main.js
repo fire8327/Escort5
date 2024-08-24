@@ -1,7 +1,8 @@
 /* menu */
 $("#toggler, #overlay").click(() => {
     $("#menu").toggleClass("max-md:top-[129px] max-md:top-0 max-md:-translate-y-full")
-    $("#overlay").toggleClass("hidden")
+    $("#overlay").toggle(500)
+    $("header").toggleClass("z-[6]")
 })
 
 

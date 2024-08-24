@@ -661,20 +661,16 @@ video {
   height: 2rem;
 }
 
+.h-\[450px\]{
+  height: 450px;
+}
+
 .h-full{
   height: 100%;
 }
 
 .h-px{
   height: 1px;
-}
-
-.h-\[\]{
-  height: ;
-}
-
-.h-\[450px\]{
-  height: 450px;
 }
 
 .w-10{
@@ -813,10 +809,6 @@ video {
 
 .overflow-hidden{
   overflow: hidden;
-}
-
-.overflow-y-scroll{
-  overflow-y: scroll;
 }
 
 .rounded{
@@ -1139,10 +1131,6 @@ body{
 
   .max-md\:top-\[129px\]{
     top: 129px;
-  }
-
-  .max-md\:z-\[3\]{
-    z-index: 3;
   }
 
   .max-md\:hidden{
