@@ -20,6 +20,17 @@ $("#overlay").click(() => {
 })
 
 
+/* map */
+$("#mapToggler").click(() => {
+    $("#map, #overlay").show(300)
+    $("body").addClass("overflow-y-hidden")
+})
+$("#overlay").click(() => {
+    $("#map, #overlay").hide(300)
+    $("body").removeClass("overflow-y-hidden")
+})
+
+
 /* nav-slider */
 const swiper = new Swiper('.nav-slider', {
     loop: true,

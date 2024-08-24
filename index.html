@@ -11,7 +11,7 @@
     <header class="w-full py-4 grid-container bg-white text-violet-500 border-b border-black/10 relative gap-y-6">
         <div class="flex items-center gap-6 justify-between text-sm md:text-base xl:text-lg">
             <a href="index.html" class="text-lg md:text-xl xl:text-2xl">Brand</a>
-            <div id="menu" class="flex items-center gap-4 max-md:absolute max-md:w-full max-md:left-0 max-md:bg-white max-md:py-6 max-md:flex-col max-md:top-0 max-md:-translate-y-full transition-all duration-500 z-[5]">
+            <div id="menu" class="flex items-center gap-4 max-md:absolute max-md:w-full max-md:left-0 max-md:bg-white max-md:py-6 max-md:flex-col max-md:top-0 max-md:-translate-y-full transition-all duration-500 max-md:z-[5]">
                 <form action="#" class="relative h-10">
                     <input type="text" class="bg-transparent pl-8 pr-4 h-full rounded-lg shadow-[0px_0px_13px_-7px_black] border border-violet-500 focus:outline-none" placeholder="Поиск...">
                     <button class="absolute top-1/2 -translate-y-1/2 left-2.5">
@@ -114,6 +114,9 @@
         </ul>
     </div>
 
+    <div id="map" class="fixed hidden z-[5] px-4 w-full left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2">
+        <iframe class="rounded-xl w-full h-[80vh] border border-violet-300 shadow-[0px_0px_13px_-7px_black]" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d577343.9831491242!2d36.72621993883368!3d55.580257163739816!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54afc73d4b0c9%3A0x3d44d6cc5757cf4c!2z0JzQvtGB0LrQstCwLCDQoNC-0YHRgdC40Y8!5e0!3m2!1sru!2ses!4v1724515466502!5m2!1sru!2ses" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
     <div id="overlay" class="bg-black/30 inset-0 fixed z-[4] hidden"></div>
 
     <main class="grid-container my-10 gap-y-10 w-full">
@@ -127,7 +130,7 @@
                 <h1 class="text-lg md:text-xl xl:text-2xl font-medium">Девушки</h1>
                 <p class="text-sm md:text-base xl:text-lg">Найдено анкет: <span class="text-violet-500">666</span></p>
             </div>
-            <button class="flex items-center gap-2 px-4 py-2 shadow-[0px_0px_13px_-7px_black] rounded-lg border border-[#6A6A6A] text-[#6A6A6A]">
+            <button id="mapToggler" class="flex items-center gap-2 px-4 py-2 shadow-[0px_0px_13px_-7px_black] rounded-lg border border-[#6A6A6A] text-[#6A6A6A]">
                 <img src="Assets/Images/main/map.svg" alt="Иконка карты" class="w-6">
                 <span>Карта</span>
             </button>
