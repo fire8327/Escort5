@@ -1,17 +1,22 @@
 /* menu */
-$("#toggler, #overlay").click(() => {
+$("#toggler, #headerOverlay").click(() => {
     $("#menu").toggleClass("max-md:top-[129px] max-md:top-0 max-md:-translate-y-full")
-    $("#overlay").toggle(500)
-    $("header").toggleClass("z-[6]")
+    $("#headerOverlay").toggle(300)
+    $("body").toggleClass("overflow-y-hidden")
 })
 
 
 /* subway */
 $("#subwayToggler").click(() => {
     $("#subway, #overlay").show(300)
+    $("#menu").removeClass("max-md:top-[129px] ")
+    $("#menu").addClass("max-md:top-0 max-md:-translate-y-full")
+    $("#headerOverlay").hide(300)
+    $("body").addClass("overflow-y-hidden")
 })
 $("#overlay").click(() => {
     $("#subway, #overlay").hide(300)
+    $("body").removeClass("overflow-y-hidden")
 })
 
 
