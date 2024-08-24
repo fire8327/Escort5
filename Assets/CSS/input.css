@@ -51,3 +51,7 @@ body{
 .pagination-active {
     @apply bg-violet-500 text-white rounded-lg
 }
+
+.similar-pagination > .swiper-pagination-bullet-active {
+    @apply !bg-violet-500
+}

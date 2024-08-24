@@ -86,6 +86,26 @@ const swiper4 = new Swiper('.girlPage-slider', {
         swiper: swiper3,
     }
 });
+/* similar-slider */
+const swiper5 = new Swiper('.similar-slider', {
+    loop: true,  
+    spaceBetween: 20,
+    pagination: {
+        el: '.similar-pagination',
+        clickable: true
+    },
+    breakpoints: {
+        320: {
+          slidesPerView: 1,        
+        },
+        768: {
+          slidesPerView: 2,         
+        },
+        1024: {
+          slidesPerView: 4,         
+        }
+    }
+});
 
 
 /* likeButton */
