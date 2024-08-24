@@ -6,10 +6,8 @@ $("#toggler, #overlay").click(() => {
 
 
 /* subway */
-$(".subwayToggler").each((i,el) => {
-    $(el).click(() => {
-        $("#subway, #overlay").show(300)
-    })
+$("#subwayToggler").click(() => {
+    $("#subway, #overlay").show(300)
 })
 $("#overlay").click(() => {
     $("#subway, #overlay").hide(300)
